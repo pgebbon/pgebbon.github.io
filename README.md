@@ -1,4 +1,4 @@
 # pgebbon.github.io
-TamilChristianIPTV
+Christian IPTV
 
-Provides common weblinks of free streaming TV channels 
+Provides weblinks of free streaming TV channels 
