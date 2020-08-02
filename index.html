@@ -5,7 +5,12 @@
  <style>
  h1 {text-align: center;}
  p {text-align: center;}
- div {text-align: center;}
+ div {
+    height:50px;
+    width:50px;
+    background-color:black;
+    foreground-color:grey;
+    }
  body {
   background-image: url(cool-background.png);
  }
@@ -18,9 +23,11 @@
             margin:0;padding:0;width:100%;height:100%;
         }
     </style>
-  <p style="font-family:verdana"><p style="color:white"><H1>Christian IPTV</H1></p></p>
-<div style="height:60%; width:60%; background:#000000" id="player"></div>
-
+<center>
+<p style="font-family:verdana"><p style="color:white"><H1>Christian IPTV</H1></p></p>
+<div id="player"></div>
+</center>
+ 
 <script>
 var player = new Playerjs({id:"player", file:[{"title":"Tamil","folder":[{"title":"Salvation_TV","file":"https://vstream.online:7443/salvtv/ngrp:salvtv_all/playlist.m3u8"},
 {"title":"Aseervatham_TV","file":"http://199.168.96.106:1935/blessingtv-tamillive/mystream/chunklist_w365086533.m3u8"},
