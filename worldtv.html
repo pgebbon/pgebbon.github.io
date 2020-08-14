@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>World IPTV</title>
+  <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/videojs-playlist-ui@3.8.0/dist/videojs-playlist-ui.css" rel="stylesheet">
+  <style>
+  body {
+  font-family: Arial, sans-serif;
+}
+
+.info {
+  background-color: #eee;
+  border: thin solid #333;
+  border-radius: 3px;
+  margin: 0 0 20px;
+  padding: 0 5px;
+}
+
+.player-container {
+  background: #1a1a1a;
+  overflow: auto;
+  width: 800px;
+  margin: 0 0 20px;
+}
+
+.video-js {
+  float: left;
+}
+
+.vjs-playlist,
+.my-custom-class,
+#my-custom-element {
+  float: left;
+  width: 300px;
+}
+
+.vjs-playlist.vjs-playlist-horizontal {
+  float: none;
+  height: 100px;
+  width: 800px;
+}
+</style>
+</head>
+<body>
+	<div class="player-container">
+		<video id="video" class="video-js" height="400" width="800" controls></video>
+		<div class="vjs-playlist"></div>
+	</div>
+
+	<script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/videojs-playlist@4.3.1/dist/videojs-playlist.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/videojs-playlist-ui@3.8.0/dist/videojs-playlist-ui.js"></script>
+	<script>
+    var player = videojs('video');
+
+    player.playlist([
+	{name:'Food Network',sources:[{src:'http://5.135.92.133:52841/out/u/502_1.m3u8'}],poster:'https://i.imgur.com/8DHt7Nb.png'},
+	{name:'HGTV',sources:[{src:'http://103.47.132.164/PLTV/88888888/224/3221227035/index.m3u8'}],poster:'https://i.imgur.com/xhjw6Yf.jpg'},
+	{name:'TLC',sources:[{src:'http://103.47.132.164/PLTV/88888888/224/3221227113/index.m3u8'}],poster:'https://i.imgur.com/WDZMEjV.jpg'},
+	{name:'BBC Lifestyle',sources:[{src:'http://103.47.132.164/PLTV/88888888/224/3221227115/index.m3u8'}],poster:'https://i.imgur.com/dezHPxf.jpg'},
+	{name:'FoxSports',sources:[{src:'http://103.47.132.164/PLTV/88888888/224/3221227125/index.m3u8'}],poster:'https://i.imgur.com/02SpgNf.jpg'},
+	{name:'Discovery Asia',sources:[{src:'http://103.47.132.164/PLTV/88888888/224/3221227161/index.m3u8'}],poster:'https://i.imgur.com/I9J4TJE.jpg'},
+	{name:'NatGeo',sources:[{src:'http://103.47.132.164/PLTV/88888888/224/3221227177/index.m3u8'}],poster:'https://i.imgur.com/HUllbh8.jpg'},
+	{name:'Asian Food Network',sources:[{src:'http://103.47.132.164/PLTV/88888888/224/3221227191/index.m3u8'}],poster:'https://i.imgur.com/rx76F0q.jpg'},
+	{name:'FoxSports3',sources:[{src:'http://103.47.132.164/PLTV/88888888/224/3221227219/index.m3u8'}],poster:'https://i.imgur.com/Ko5iOWY.jpg'},
+	{name:'Love Nature',sources:[{src:'http://103.47.132.164/PLTV/88888888/224/3221227339/index.m3u8'}],poster:'https://i.imgur.com/ycxkJbi.jpg'},
+	{name:'BBC Cbeebies',sources:[{src:'http://103.47.132.164/PLTV/88888888/224/3221227353/index.m3u8'}],poster:'https://i.imgur.com/JkQk8ta.jpg'},
+	{name:'NatGeo People',sources:[{src:'http://103.47.132.164/PLTV/88888888/224/3221227127/index.m3u8'}],poster:'https://i.imgur.com/EQoeu75.png'},
+	{name:'NatGeo Wild',sources:[{src:'http://103.47.132.164/PLTV/88888888/224/3221227157/index.m3u8'}],poster:'https://i.imgur.com/HREf2zD.png'},
+	{name:'Discovery',sources:[{src:'http://103.47.132.164/PLTV/88888888/224/3221227169/index.m3u8'}],poster:'https://i.imgur.com/P3Zu9jU.png'},
+	{name:'Animal Planet',sources:[{src:'http://103.47.132.164/PLTV/88888888/224/3221227173/index.m3u8'}],poster:'https://i.imgur.com/r9PKNXs.png'},
+	{name:'FoxSports2',sources:[{src:'http://103.47.132.164/PLTV/88888888/224/3221227175/index.m3u8'}],poster:'https://i.imgur.com/pNM4OzN.png'},
+	{name:'Smithsonia Channel',sources:[{src:'http://103.47.132.164/PLTV/88888888/224/3221227321/index.m3u8'}],poster:'https://i.imgur.com/wfITK69.png'},
+	{name:'Zoo Moo',sources:[{src:'http://103.47.132.164/PLTV/88888888/224/3221227323/index.m3u8'}],poster:'https://i.imgur.com/FBdKWK5.png'},
+	{name:'Fine Living',sources:[{src:'http://5.135.92.133:52841/out/u/498_1.m3u8'}],poster:'https://i.imgur.com/RUASMcx.jpg'},	
+	{name:'History',sources:[{src:'http://103.47.132.164/PLTV/88888888/224/3221227335/index.m3u8'}],poster:'https://i.imgur.com/fmvngZk.png'}
+	]);
+    // Initialize the playlist-ui plugin with the horizontal option
+    player.playlistUi({horizontal: true});
+	</script>
+</body>
+</html>
