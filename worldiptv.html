@@ -44,7 +44,6 @@
 </style>
 </head>
 <body>
- <center><h1>World IPTV</h1></center>
 	<div class="player-container">
 		<video id="video" class="video-js" height="400" width="800" controls></video>
 		<div class="vjs-playlist"></div>
@@ -54,9 +53,9 @@
 	<script src="https://cdn.jsdelivr.net/npm/videojs-playlist@4.3.1/dist/videojs-playlist.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/videojs-playlist-ui@3.8.0/dist/videojs-playlist-ui.js"></script>
 	<script>
-    var player = videojs('video');
+    	var player = videojs('video');
 
-    player.playlist([
+   	 player.playlist([
 	{name:'Food Network',sources:[{src:'http://5.135.92.133:52841/out/u/502_1.m3u8'}],poster:'https://i.imgur.com/8DHt7Nb.png'},
 	{name:'HGTV',sources:[{src:'http://103.47.132.164/PLTV/88888888/224/3221227035/index.m3u8'}],poster:'https://i.imgur.com/xhjw6Yf.jpg'},
 	{name:'TLC',sources:[{src:'http://103.47.132.164/PLTV/88888888/224/3221227113/index.m3u8'}],poster:'https://i.imgur.com/WDZMEjV.jpg'},
@@ -78,8 +77,8 @@
 	{name:'Fine Living',sources:[{src:'http://5.135.92.133:52841/out/u/498_1.m3u8'}],poster:'https://i.imgur.com/RUASMcx.jpg'},	
 	{name:'History',sources:[{src:'http://103.47.132.164/PLTV/88888888/224/3221227335/index.m3u8'}],poster:'https://i.imgur.com/fmvngZk.png'}
 	]);
-  // Initialize the playlist-ui plugin with the horizontal option
- player.playlistUi({horizontal: true});
+  	// Initialize the playlist-ui plugin with the horizontal option
+ 	player.playlistUi({horizontal: true});
 	</script>
 </body>
 </html>
