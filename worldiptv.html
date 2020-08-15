@@ -28,34 +28,163 @@
 .video-js {
   float: left;
 }
-
-.vjs-playlist,
-.my-custom-class,
-#my-custom-element {
-  float: left;
-  width: 300px;
+<html>
+<head>
+<meta charset="utf-8">
+<title>World IPTV</title>
+<link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"/>
+<link href="https://vjs.zencdn.net/5.16.0/video-js.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/videojs-playlist-ui@3.8.0/dist/videojs-playlist-ui.css" rel="stylesheet">
+<script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/videojs-playlist@4.3.1/dist/videojs-playlist.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/videojs-playlist-ui@3.8.0/dist/videojs-playlist-ui.js"></script>
+<style>
+html,
+body {
+  margin:0;padding:0;width:100%;height:100%;
 }
 
-.vjs-playlist.vjs-playlist-horizontal {
-  float: none;
-  height: 100px;
-  width: 800px;
+.video-holder,
+.video-holder * {
+  box-sizing: border-box !important
 }
+
+.video-holder {
+  background: #1b1b1b;
+  padding: 10px
+}
+
+.centered {
+  width: 100%
+}
+
+#video {
+  border-radius: 8px
+}
+
+.video-holder .vjs-big-play-button {
+  left: 50%;
+  width: 100px;
+  margin-left: -50px;
+  height: 80px;
+  top: 50%;
+  margin-top: -40px
+}
+
+
+/* CUSTOM BUTTONS */
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+}
+.icon-angle-left:before {
+    content: "\f104";
+}
+.icon-angle-right:before {
+    content: "\f105";
+}
+
+.video-js .icon-angle-right, .video-js .icon-angle-left {
+    cursor: pointer;
+    -webkit-box-flex: none;
+    -moz-box-flex: none;
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+}
+
+/* 
+Video.js Controls Style Overrides 
+.vjs-default-skin .vjs-progress-control,
+.vjs-default-skin .vjs-fullscreen-control {
+    display: none;  
+}*/
+
+
+/*.playlist-components {
+    height: 264px;
+    width: 40%;
+    padding: 0 0 0 10px
+}
+.video-js, .playlist-components {
+    display: inline-block;
+    margin-right: -4px;
+    vertical-align: top;
+}
+.button-holder {
+    padding: 10px;
+    height: 36px;
+}
+
+.playlist {
+    height: 264px;
+    width: 100%;
+    overflow-y: auto;
+    color: #c0c0c0;
+    border-radius: 8px;
+    display: block;
+    margin: -2px 0 0 0;
+    padding: 0;
+    position: relative;
+    background: -moz-linear-gradient(top,#000 0,#212121 19%,#212121 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#000),color-stop(19%,#212121),color-stop(100%,#212121));
+    background: -o-linear-gradient(top,#000 0,#212121 19%,#212121 100%);
+    background: -ms-linear-gradient(top,#000 0,#212121 19%,#212121 100%);
+    background: linear-gradient(to bottom,#000 0,#212121 19%,#212121 100%);
+    box-shadow: 0 1px 1px #1a1a1a inset,0px 1px 1px #454545;
+    border: 1px solid #1a1a18;
+}
+#next {float: right}
+#prev {float: left}
+#prev, #next {
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.playlist ul {
+    padding: 0;
+    margin: 0;
+    list-style: none
+}
+.playlist ul li {
+    padding: 10px;
+    border-bottom: 1px solid #191919;
+    cursor: pointer
+}
+.playlist ul li.active {
+    background-color: #4f4f4f;
+    border-color: #4f4f4f;
+    color: white;
+}
+.playlist ul li:hover {
+    border-color: #353535;
+    background: #353535;
+}
+.playlist .poster, .playlist .title  {
+    display: inline-block;
+    vertical-align: top
+}
+.playlist .number {padding-right: 10px; display: none}
+.playlist .poster {display: none}
+.playlist .title {padding-left: 0}*\
 </style>
 </head>
 <body>
-	<div class="player-container">
-		<video id="video" class="video-js" height="400" width="800" controls></video>
-		<div class="vjs-playlist"></div>
-	</div>
-
-	<script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/videojs-playlist@4.3.1/dist/videojs-playlist.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/videojs-playlist-ui@3.8.0/dist/videojs-playlist-ui.js"></script>
-	<script>
-    	var player = videojs('video');
-
-   	 player.playlist([
+<br><br>
+<center>
+<video class="video-js vjs-default-skin" controls height="360px" width="640px"></video>
+<button class="previous">Previous</button>
+<button class="next">Next</button>
+</center>
+<script>
+var videoList = ([
 	{name:'Food Network',sources:[{src:'http://5.135.92.133:52841/out/u/502_1.m3u8'}],poster:'https://i.imgur.com/8DHt7Nb.png'},
 	{name:'HGTV',sources:[{src:'http://103.47.132.164/PLTV/88888888/224/3221227035/index.m3u8'}],poster:'https://i.imgur.com/xhjw6Yf.jpg'},
 	{name:'TLC',sources:[{src:'http://103.47.132.164/PLTV/88888888/224/3221227113/index.m3u8'}],poster:'https://i.imgur.com/WDZMEjV.jpg'},
@@ -72,13 +201,110 @@
 	{name:'Discovery',sources:[{src:'http://103.47.132.164/PLTV/88888888/224/3221227169/index.m3u8'}],poster:'https://i.imgur.com/P3Zu9jU.png'},
 	{name:'Animal Planet',sources:[{src:'http://103.47.132.164/PLTV/88888888/224/3221227173/index.m3u8'}],poster:'https://i.imgur.com/r9PKNXs.png'},
 	{name:'FoxSports2',sources:[{src:'http://103.47.132.164/PLTV/88888888/224/3221227175/index.m3u8'}],poster:'https://i.imgur.com/pNM4OzN.png'},
-	{name:'Smithsonia Channel',sources:[{src:'http://103.47.132.164/PLTV/88888888/224/3221227321/index.m3u8'}],poster:'https://i.imgur.com/wfITK69.png'},
+	{name:'Smithsonian Channel',sources:[{src:'http://103.47.132.164/PLTV/88888888/224/3221227321/index.m3u8'}],poster:'https://i.imgur.com/wfITK69.png'},
 	{name:'Zoo Moo',sources:[{src:'http://103.47.132.164/PLTV/88888888/224/3221227323/index.m3u8'}],poster:'https://i.imgur.com/FBdKWK5.png'},
 	{name:'Fine Living',sources:[{src:'http://5.135.92.133:52841/out/u/498_1.m3u8'}],poster:'https://i.imgur.com/RUASMcx.jpg'},	
 	{name:'History',sources:[{src:'http://103.47.132.164/PLTV/88888888/224/3221227335/index.m3u8'}],poster:'https://i.imgur.com/fmvngZk.png'}
 	]);
-  	// Initialize the playlist-ui plugin with the horizontal option
- 	player.playlistUi({horizontal: true});
-	</script>
+var player = videojs(document.querySelector('video'), {
+  inactivityTimeout: 0
+});
+try {
+  // try on ios
+  player.volume(1);
+  // player.play();
+} catch (e) {}
+//player.playlist(videoList, 4);/// play video 5
+player.playlist(videoList);
+document.querySelector('.previous').addEventListener('click', function() {
+  player.playlist.previous();
+});
+document.querySelector('.next').addEventListener('click', function() {
+  player.playlist.next();
+});
+
+/*
+document.querySelector('.jump').addEventListener('click', function() {
+  player.playlist.currentItem(2); // play third
+});
+
+player.playlist.autoadvance(0); // play all
+
+Array.prototype.forEach.call(document.querySelectorAll('[name=autoadvance]'), function(el) {
+  el.addEventListener('click', function() {
+    var value = document.querySelector('[name=autoadvance]:checked').value;
+    //alert(value);
+    player.playlist.autoadvance(JSON.parse(value));
+  });
+});
+*/
+
+/* ADD PREVIOUS */
+var Button = videojs.getComponent('Button');
+
+// Extend default
+var PrevButton = videojs.extend(Button, {
+  //constructor: function(player, options) {
+  constructor: function() {
+    Button.apply(this, arguments);
+    //this.addClass('vjs-chapters-button');
+    this.addClass('icon-angle-left');
+    this.controlText("Previous");
+  },
+
+  // constructor: function() {
+  //   Button.apply(this, arguments);
+  //   this.addClass('vjs-play-control vjs-control vjs-button vjs-paused');
+  // },
+
+  // createEl: function() {
+  //   return Button.prototype.createEl('button', {
+  //     //className: 'vjs-next-button vjs-control vjs-button',
+  //     //innerHTML: 'Next >'
+  //   });
+  // },
+
+  handleClick: function() {
+    console.log('click');
+    player.playlist.previous();
+  }
+});
+
+/* ADD BUTTON */
+//var Button = videojs.getComponent('Button');
+
+// Extend default
+var NextButton = videojs.extend(Button, {
+  //constructor: function(player, options) {
+  constructor: function() {
+    Button.apply(this, arguments);
+    //this.addClass('vjs-chapters-button');
+    this.addClass('icon-angle-right');
+    this.controlText("Next");
+  },
+
+  handleClick: function() {
+    console.log('click');
+    player.playlist.next();
+  }
+});
+
+// Register the new component
+videojs.registerComponent('NextButton', NextButton);
+videojs.registerComponent('PrevButton', PrevButton);
+//player.getChild('controlBar').addChild('SharingButton', {});
+player.getChild('controlBar').addChild('PrevButton', {}, 0);
+player.getChild('controlBar').addChild('NextButton', {}, 2);
+//player.controlBar.addChild('SharingButton', {}, 6);
+
+//var MyButton = player.controlBar.addChild(new MyButtonComponent(), {}, 6);
+
+//const ControlBar = videojs.getComponent('ControlBar');
+//ControlBar.prototype.options_.children.splice(ControlBar.prototype.options_.children.length - 1, 0, 'SharingButton');
+
+// Register the new component
+//videojs.registerComponent('SharingButton', SharingButton);
+//player.getChild('controlBar').addChild('SharingButton', {});
+</script>
 </body>
 </html>
