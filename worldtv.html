@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>World IPTV</title>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<link rel="stylesheet" href="https://pgebbon.github.io/main.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https://cdnjs.loli.net/ajax/libs/hls.js/0.12.4/hls.min.js"></script>
+    <script src="https://pgebbon.github.io/app.js"></script>
+</head>
+
+<body>
+
+    <div class="bgfull">
+        <video id="video" class="responsive-video" style="width: 100%;height: 100%;" controls></video>
+    </div>
+
+    <!--playlist sidebar-->
+    <div class="playlist-nav-button">
+        <a id="playlist-nav" href="" data-target="playlist-slide-out" class="sidenav-trigger"
+            style="margin-top: 9px;"><i class="material-icons">view_list</i></a>
+    </div>
+    <ul style="width: 300px !important" id="playlist-slide-out" class="collapsible sidenav dark"
+        data-collapsible="accordion">
+ 	<li id="channelli"><div class="chip"><label class="kanalMethod"><img id="image" src="https://i.imgur.com/1yS5tU0.png" style="background-color:white;"><input type="radio" name="channellinkradio" id="channellinkradio" value="https://livecdn.fptplay.net/qnetlive/foxsports_2000.stream/chunklist.m3u8"></label><p class="text-epg" style="font-size:16px !important;"> Fox Sports<br></p></div></li><li><div class="divider"></div></li>
+	<li id="channelli"><div class="chip"><label class="kanalMethod"><img id="image" src="https://i.imgur.com/1yS5tU0.png" style="background-color:white;"><input type="radio" name="channellinkradio" id="channellinkradio" value="https://livecdn.fptplay.net/qnetlive/foxsports2_2000.stream/chunklist.m3u8"></label><p class="text-epg" style="font-size:16px !important;"> Fox Sports 2<br></p></div></li><li><div class="divider"></div></li>
+	<li id="channelli"><div class="chip"><label class="kanalMethod"><img id="image" src="https://i.imgur.com/1yS5tU0.png" style="background-color:white;"><input type="radio" name="channellinkradio" id="channellinkradio" value="https://livecdn.fptplay.net/qnetlive/foxsports3_hls.smil/chunklist_b2500000.m3u8"></label><p class="text-epg" style="font-size:16px !important;"> Fox Sports 3<br></p></div></li><li><div class="divider"></div></li>
+    <li id="channelli"><div class="chip"><label class="kanalMethod"><img id="image" src="https://i.imgur.com/1yS5tU0.png" style="background-color:white;"><input type="radio" name="channellinkradio" id="channellinkradio" value="https://livecdn.fptplay.net/world/afchd_hls.smil/chunklist_b2500000.m3u8"></label><p class="text-epg" style="font-size:16px !important;"> Asian Food Network<br></p></div></li><li><div class="divider"></div></li>
+	<li id="channelli"><div class="chip"><label class="kanalMethod"><img id="image" src="https://i.imgur.com/1yS5tU0.png" style="background-color:white;"><input type="radio" name="channellinkradio" id="channellinkradio" value="https://livecdn.fptplay.net/qnetlive/travelliving_hls.smil/chunklist_b2500000.m3u8"></label><p class="text-epg" style="font-size:16px !important;"> TLC<br></p></div></li><li><div class="divider"></div></li>
+	<li id="channelli"><div class="chip"><label class="kanalMethod"><img id="image" src="https://i.imgur.com/1yS5tU0.png" style="background-color:white;"><input type="radio" name="channellinkradio" id="channellinkradio" value="https://livecdn.fptplay.net/qnetlive/bbclifestyle_2000.stream/chunklist.m3u8"></label><p class="text-epg" style="font-size:16px !important;"> BBC Lifestyle<br></p></div></li><li><div class="divider"></div></li>
+	<li id="channelli"><div class="chip"><label class="kanalMethod"><img id="image" src="https://i.imgur.com/1yS5tU0.png" style="background-color:white;"><input type="radio" name="channellinkradio" id="channellinkradio" value="https://livecdn.fptplay.net/world/davincihd_hls.smil/chunklist_b2500000.m3u8"></label><p class="text-epg" style="font-size:16px !important;"> Da Vinci<br></p></div></li><li><div class="divider"></div></li>
+	<li id="channelli"><div class="chip"><label class="kanalMethod"><img id="image" src="https://i.imgur.com/1yS5tU0.png" style="background-color:white;"><input type="radio" name="channellinkradio" id="channellinkradio" value="https://livecdn.fptplay.net/qnetlive/discoveryasia_hls.smil/chunklist_b2500000.m3u8"></label><p class="text-epg" style="font-size:16px !important;"> Discovery Asia<br></p></div></li><li><div class="divider"></div></li>
+	<li id="channelli"><div class="chip"><label class="kanalMethod"><img id="image" src="https://i.imgur.com/1yS5tU0.png" style="background-color:white;"><input type="radio" name="channellinkradio" id="channellinkradio" value="https://livecdn.fptplay.net/qnetlive/discovery_hls.smil/chunklist_b2500000.m3u8"></label><p class="text-epg" style="font-size:16px !important;"> Discovery<br></p></div></li><li><div class="divider"></div></li>
+	<li id="channelli"><div class="chip"><label class="kanalMethod"><img id="image" src="https://i.imgur.com/1yS5tU0.png" style="background-color:white;"><input type="radio" name="channellinkradio" id="channellinkradio" value="https://livecdn.fptplay.net/qnetlive/animalplanet_hls.smil/chunklist_b2500000.m3u8"></label><p class="text-epg" style="font-size:16px !important;"> Animal Planet<br></p></div></li><li><div class="divider"></div></li>	
+	<li id="channelli"><div class="chip"><label class="kanalMethod"><img id="image" src="https://i.imgur.com/1yS5tU0.png" style="background-color:white;"><input type="radio" name="channellinkradio" id="channellinkradio" value="https://livecdn.fptplay.net/foxlive/natgeohd_hls.smil/chunklist_b2500000.m3u8"></label><p class="text-epg" style="font-size:16px !important;"> National Geographic HD<br></p></div></li><li><div class="divider"></div></li>
+	<li id="channelli"><div class="chip"><label class="kanalMethod"><img id="image" src="https://i.imgur.com/1yS5tU0.png" style="background-color:white;"><input type="radio" name="channellinkradio" id="channellinkradio" value="https://livecdn.fptplay.net/world/outdoorfhd_hls.smil/chunklist_b2500000.m3u8"></label><p class="text-epg" style="font-size:16px !important;"> Outdoor Channel<br></p></div></li><li><div class="divider"></div></li>
+	<li id="channelli"><div class="chip"><label class="kanalMethod"><img id="image" src="https://i.imgur.com/1yS5tU0.png" style="background-color:white;"><input type="radio" name="channellinkradio" id="channellinkradio" value="https://livecdn.fptplay.net/world/nhkworld_hls.smil/chunklist_b2500000.m3u8"></label><p class="text-epg" style="font-size:16px !important;"> NHK World Japan<br></p></div></li><li><div class="divider"></div></li>
+	<li id="channelli"><div class="chip"><label class="kanalMethod"><img id="image" src="https://i.imgur.com/1yS5tU0.png" style="background-color:white;"><input type="radio" name="channellinkradio" id="channellinkradio" value="https://livecdn.fptplay.net/world/newsasia_hls.smil/chunklist_b2500000.m3u8"></label><p class="text-epg" style="font-size:16px !important;"> Channel NewsAsia <br></p></div></li><li><div class="divider"></div></li>
+	</ul>
+
+	
+</body>
+</html>
