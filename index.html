@@ -4,7 +4,8 @@
 		<title></title> 
         <script src='https://pgebbon.github.io/playerjs.js' type='text/javascript'></script>
 	<link rel="manifest" href="manifest.json">
-		document.addEventListener("orientationchange", function(event){
+<script>
+document.addEventListener("orientationchange", function(event){
     switch(window.orientation) 
     {  
         case -90: case 90:
@@ -13,7 +14,7 @@
         default:
             /* Device is in portrait mode */
     }
-});
+});</script>
 	</head>
 	<body>
     <style>
