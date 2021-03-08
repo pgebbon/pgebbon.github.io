@@ -4,6 +4,16 @@
 		<title></title> 
         <script src='https://pgebbon.github.io/playerjs.js' type='text/javascript'></script>
 	<link rel="manifest" href="manifest.json">
+		document.addEventListener("orientationchange", function(event){
+    switch(window.orientation) 
+    {  
+        case -90: case 90:
+            /* Device is in landscape mode */
+            break; 
+        default:
+            /* Device is in portrait mode */
+    }
+});
 	</head>
 	<body>
     <style>
