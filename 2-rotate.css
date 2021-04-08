@@ -1,7 +1,7 @@
 @media only screen and (orientation:portrait){
   body {
     height: 94vw;
-    width: 96vw;
+    background-color: black;
     transform: rotate(90deg);
   }
 }
