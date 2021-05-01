@@ -1,5 +1,0 @@
-{
-    "display":      "standalone", /* Could be "fullscreen", "standalone", "minimal-ui", or "browser" */
-    "orientation":  "landscape", /* Could be "landscape" or "portrait" */
-    ...
-}
