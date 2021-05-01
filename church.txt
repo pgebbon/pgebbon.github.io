@@ -1,0 +1,8 @@
+[
+{"title":"<img src='https://i.imgur.com/HOlFRUr.png' width='192px'height='108px'>NLAG Tamil","file":"https://dobr3.livewebcast.in/nlag/nlagtamil-m/playlist_dvr.m3u8"},
+{"title":"<img src='https://i.imgur.com/yQySovj.png' width='192px'height='108px'>NLAG English","file":"http://dosg2.livewebcast.in/nlag/nlagenglish/playlist.m3u8"},
+{"title":"<img src='https://i.imgur.com/fWHWJp0.png' width='192px'height='108px'>ACA","file":"http://sg2la1.mycoolcdn.com/acaph/acaphlivestream/playlist_dvr.m3u8"},
+{"title":"<img src='https://i.imgur.com/11h8NWi.png' width='192px'height='108px'>ACA Avadi","file":"http://media.akamaicdn.us:1935/acawebtv/acawebtv/playlist.m3u8"},
+{"title":"<img src='https://i.imgur.com/Vc2hGvF.png' width='192px'height='108px'>REV SAM","file":"https://dobr3.livewebcast.in/vcf-abr/vcflive/playlist.m3u8"},
+{"title":"<img src='https://i.imgur.com/JZS7ik6.png' width='192px'height='108px'>FGAG","file":"https://dobr3.chennaistream.net/fgag-abr/fgaglive/playlist.m3u8"}
+]
