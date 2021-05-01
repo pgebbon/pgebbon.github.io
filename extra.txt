@@ -22,9 +22,9 @@
 {name:'Match Nash Sport',sources:[{src:'https://95-213-224-183.livesports24.online/mnashsport.m3u8'}],poster:'https://i.imgur.com/KNxo1mI.png'},
 {name:'Bein Sport Xtra',sources:[{src:'https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5df975e2b27cf5000921c102/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel'}],poster:'https://i.imgur.com/haNr0Qp.png'},
 {name:'Sports Tonight',sources:[{src:'http://sports.ashttp9.visionip.tv/live/visiontvuk-sports-sportstonightlive-hsslive-25f-4x3-SD/chunklist.m3u8?sd=10&rebase=on&mux_audio=true'}],poster:'https://i.imgur.com/q8cwA2x.png'},
-{name:'Asto Arena',sources:[{src:'http://50.7.161.82:8278/streams/d/Arena/playlist.m3u8'}],poster:'https://i.imgur.com/fQBuw4U.jpg'},
-{name:'Asto Supersport',sources:[{src:'http://185.180.221.194:8278/streams/d/Assp1/playlist.m3u8'}],poster:'https://i.imgur.com/DR9qCIq.jpg'},
-{name:'Asto Supersport 2',sources:[{src:'http://185.180.221.194:8278/streams/d/Assp2/playlist.m3u8'}],poster:'https://i.imgur.com/o8lo4mZ.jpg'},
-{name:'Asto Supersport 3',sources:[{src:'http://185.180.221.194:8278/streams/d/Assp3/playlist.m3u8'}],poster:'https://i.imgur.com/ADJWRW5.jpg'},
-{name:'Asto Supersport 4',sources:[{src:'http://185.180.221.194:8278/streams/d/Assp4/playlist.m3u8'}],poster:'https://i.imgur.com/p6WPzjT.jpg'}
+{name:'Astro Arena',sources:[{src:'http://50.7.161.82:8278/streams/d/Arena/playlist.m3u8'}],poster:'https://i.imgur.com/fQBuw4U.jpg'},
+{name:'Astro Supersport',sources:[{src:'http://185.180.221.194:8278/streams/d/Assp1/playlist.m3u8'}],poster:'https://i.imgur.com/DR9qCIq.jpg'},
+{name:'Astro Supersport 2',sources:[{src:'http://185.180.221.194:8278/streams/d/Assp2/playlist.m3u8'}],poster:'https://i.imgur.com/o8lo4mZ.jpg'},
+{name:'Astro Supersport 3',sources:[{src:'http://185.180.221.194:8278/streams/d/Assp3/playlist.m3u8'}],poster:'https://i.imgur.com/ADJWRW5.jpg'},
+{name:'Astro Supersport 4',sources:[{src:'http://185.180.221.194:8278/streams/d/Assp4/playlist.m3u8'}],poster:'https://i.imgur.com/p6WPzjT.jpg'}
 ]
