@@ -1,2 +1,2 @@
 # pgebbon.github.io
-Support files for playerJS
+JavaScript file for playerjs web player
