@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'PT Sans', sans-serif;
+    height: 60px;
+    padding: 0 10px;
+    font-size: clamp(1.5rem, 2.5vw, 4rem); 
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body {
+    background-color: rgb(241, 248, 247);
+    overflow-y: hidden;
+}
+
+main {
+    margin: 10px;
+    display: flex;
+}
+
+#channel {
+    flex: 60%;
+    max-height: 89vh;
+    overflow-y: scroll;
+    display: flex;  
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#channel > h2 {
+    padding-bottom: 20px;
+}
+#player {
+    flex: 40%;
+    margin: auto 10px;
+}
