@@ -341,9 +341,16 @@
         try {
             player.api('file',file);
             player.api('play');
+            if (screen.width < 769) {
+                window.scroll({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+                });
+            }
         }
         catch(err) {
-            alert("Sorry! Couldn't load channel at the moment");
+            alert(err);
         }
     }
 </script>
