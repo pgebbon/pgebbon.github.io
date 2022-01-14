@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    color: rgb(73, 73, 73);
+    height: 70px;
+    padding: 0 10px;
+    font-size: clamp(1.5rem, 2.0vw, 4rem); 
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body {
+    background-color: rgb(241, 248, 247);
+    overflow-y: hidden;
+}
+
+main {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+}
+
+#channels {
+    flex: 60%;
+    max-height: calc(100vh - 80px) !important;
+    overflow-y: scroll;
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#channels > h2 {
+    padding-bottom: 20px;
+}
+#player {
+    flex: 40%;
+    margin: auto 10px;
+}
+.category {
+    width: 100%;
+    margin: 2rem 10px 1rem 10px;
+    border-bottom: solid 2px rgb(229, 238, 238);
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.2);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 3px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #363636;
+}
+
+.channel {
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.channel:active {
+    animation: press 0.2s 1 linear;
+}
+
+.channel img {
+    width: 150;
+    /* height: 171; */
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        text-align: center;
+    }
+    main {
+        flex-direction: column-reverse;
+    }
+    body {
+        overflow-y: auto;
+    }
+    #channels {
+        height: fit-content;
+        overflow-y: unset;
+    }
+    .channel {
+        margin-right: 0;
+    }
+    .category {
+        text-align: center;
+    }
+    #player {
+        flex: auto;
+        min-width: 192px;
+        min-height: 108px;
+        margin: 10px;
+    }
+}
+
+@keyframes press {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.92);
+    }
+    to {
+        transform: scale(1);
+    }
+}
