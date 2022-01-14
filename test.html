@@ -336,22 +336,4 @@ Note : Dont change the above format. Kindly use the format used here to follow t
 <script src="//vjs.zencdn.net/7.10.2/video.min.js" type="text/javascript"></script>
 <script>var player = videojs('player',options);
 player.play();</script>
-<script>
-function play(file) {
-try {
-player.api('file',file);
-player.api('play');
-if (screen.width < 769) {
-window.scroll({
-top: 0,
-left: 0,
-behavior: 'smooth'
-});
-}
-}
-catch(err) {
-alert(err);
-}
-}
-</script>
 </body></html>
