@@ -358,14 +358,12 @@
         <div id="player"></div>
     </main>no
 
-<script src="//vjs.zencdn.net/7.10.2/video.min.js" type="text/javascript"></script>
-<script>var player = videojs(document.querySelector('video'), {
-  inactivityTimeout: 0
-});</script>
+<script src="https://vjs.zencdn.net/7.10.2/video.min.js" type="text/javascript"></script>
+<script>var player = videojs('player',options);</script>
 <script>
     function play(file) {
         try {
-            player.play('file');
+            player.play('channels');
             if (screen.width < 769) {
                 window.scroll({
                 top: 0,
