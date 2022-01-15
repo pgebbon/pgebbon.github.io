@@ -359,7 +359,7 @@
     </main>no
 
 <script src="https://vjs.zencdn.net/7.10.2/video.min.js" type="text/javascript"></script>
-<script>var player = videojs('player',options, "");</script>
+<script>var player = videojs(document.querySelector('video'));</script>
 <script>
     function play(file) {
         try {
