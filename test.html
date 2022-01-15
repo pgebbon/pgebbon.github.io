@@ -376,9 +376,9 @@
 				delete videojs.getPlayers()['player']; 
 			}
 
-			videojs('#player').sources({
-				src:'file',   // dynamic link
-				type:'application/x-mpegURL'  // type
+			videojs('#player').source({
+				src:"file",   // dynamic link
+				type:"application/x-mpegURL"  // type
 			});
 
 			// var source = document.getElementsByName('source');
