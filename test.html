@@ -363,7 +363,8 @@
 <script>
     function play(file) {
         try {
-            player.play('channels');
+            playlistData = player.playlist();
+            player.play();
             if (screen.width < 769) {
                 window.scroll({
                 top: 0,
