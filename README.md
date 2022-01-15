@@ -15,3 +15,18 @@ I got more interested with the development in HTML5 video content and the flexib
 Also with broadband Internet services and the smart television with bigger screen I saw that the best way would be to have it in HTML5 that can easily fit to any device 
 
 I tried a few apps but they were either paid service or not suitable so had been looking for doing it on my own.
+
+PlayerJS - Ever since I came to know this excellent html video player I started seeing the possibilities. By 2020 half of the streaming content I had had http protocol or incompatible format 
+This began to change towards the end of 2020 and now almost every stream I have is playable 
+
+https://playerjs.com/ Biggest advantage of this player is multiple stream can be combined easily and passing a playlist to the player brings all the content in one place. I first developed
+my site from blogger and was hosting the java script file here at GitHub 
+https://christianiptvchannels.blogspot.com/
+
+Recently @allwin helped me host the content as well in a good looking manner at GitHub itself.
+
+For some of the streams that are still not compatible on PlayerJS I see VideoJS as an excellent alternative
+
+Here I'm testing VideoJS as well that's a good fit for Android TV and mobile platform 
+
+PlayerJS works well with iOS and PC
