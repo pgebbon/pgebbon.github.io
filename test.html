@@ -361,7 +361,6 @@
 			id="player"
 			class="video-js"
 			preload="auto"
-                        controls
 			poster="https://i.imgur.com/kl6RAOh.jpg">
 		<source src="" type="video/m3u8"></source>
 		</video>
@@ -377,8 +376,8 @@
 			}
 
 			videojs('#player').source({
-				src:"file",   // dynamic link
-				type:"application/x-mpegURL"  // type
+				src:'file',   // dynamic link
+				type:'application/x-mpegURL'  // type
 			});
 
 			// var source = document.getElementsByName('source');
