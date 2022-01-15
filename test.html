@@ -359,21 +359,11 @@
     </main>no
 
 <script src="https://vjs.zencdn.net/7.10.2/video.min.js" type="text/javascript"></script>
-<script>var player = videojs('player',{
-  muted:false,
-  autoplay:true,
-  html5:{
-    hls:{
-      enableLowInitialPlaylist:true
-    }
-  }
-},function(e){
-});</script>
+<script>var player = videojs('player',options, "");</script>
 <script>
     function play(file) {
         try {
-            playlistData = player.playlist();
-            player.play();
+            player.play(class);
             if (screen.width < 769) {
                 window.scroll({
                 top: 0,
