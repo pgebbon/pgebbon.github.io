@@ -4,6 +4,7 @@
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="index.css">
+		<link href="//vjs.zencdn.net/7.10.2/video-js.min.css" rel="stylesheet">
     </head>
 <body>
     <nav><h3>Christian IPTV</h3></nav>
@@ -347,23 +348,41 @@
 		<div class="channel" onclick="play('http://livestream.biznetvideo.net/biznet_adventure/smil:adventure.smil/playlist.m3u8')"> <img alt="Biznet Adventure" src="https://i.imgur.com/wCjsXsd.jpg"> </div> 
 		<div class="channel" onclick="play('https://strm.yandex.ru/kal/sibir/sibir0.m3u8')"> <img alt="Наша Сибирь" src="https://i.imgur.com/Ga8U50c.jpg"> </div> 
 		<div class="channel" onclick="play('https://broadcast.blivenyc.com/speed/broadcast/22/mobile-playlist.m3u8')"> <img alt="AKC TV" src="https://i.imgur.com/25FQIlo.jpg"> </div> 
-		<div class="channel" onclick="play('https://broadcast.blivenyc.com/speed/broadcast/29/mobile-playlist.m3u8')"> <img alt="AKC TV Puppies" src="https://i.imgur.com/TpuHbBT.jpg"> </div> 
-        <!--
-        Your new channel goes here with the below format
+		<div class="channel" onclick="play('https://broadcast.blivenyc.com/speed/broadcast/29/mobile-playlist.m3u8')"> <img alt="AKC TV Puppies" src="https://i.imgur.com/TpuHbBT.jpg"> </div>
+        
+        <!-- Your new channel goes here with the below format
         <div class="channel" onclick="play('Playlist link')"> <img alt="AKC TV Puppies" src="Image source"> </div>
         Image size not needed.
-        Note : Dont change the above format. Kindly use the format used here to follow the design pattern.
-        -->
+        Note : Dont change the above format. Kindly use the format used here to follow the design pattern. -->
+       
         </div>
-        <div id="player"></div>
-    </main>no
-
-<script src="https://vjs.zencdn.net/7.10.2/video.min.js" type="text/javascript"></script>
-<script>var player = videojs('player',options, "");</script>
+		<script src="http://vjs.zencdn.net/7.10.2/video.min.js"></script>
+        <video
+			id="player"
+			class="video-js"
+			preload="auto"
+			poster="http://vjs.zencdn.net/v/oceans.png">
+		<source src="" type="video/m3u8"></source>
+		</video>
+    </main>
 <script>
-    function play(file) {
+	function play(file) {
         try {
-            player.play(class);
+			var player = videojs('player');
+
+			if (videojs.getPlayers()['player']) {
+				// hls-video is the id of the video tag                        
+				delete videojs.getPlayers()['player']; 
+			}
+
+			videojs('#player').src({
+				src: file,   // dynamic link
+				type: "application/x-mpegURL"  // type
+			});
+
+			// var source = document.getElementsByName('source');
+			// source.setAttribute('src', file);
+            player.play();
             if (screen.width < 769) {
                 window.scroll({
                 top: 0,
