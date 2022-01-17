@@ -33,7 +33,7 @@ main {
 }
 
 #channels {
-    flex: 40%;
+    flex: 45%;
     max-height: calc(100vh - 80px) !important;
     overflow-y: scroll;
     display: flex;  
@@ -44,7 +44,7 @@ main {
     padding-bottom: 20px;
 }
 #player {
-    flex: 60%;
+    flex: 55%;
     margin: auto 10px;
 }
 .category {
@@ -61,7 +61,7 @@ main {
 
 ::-webkit-scrollbar
 {
-	width: 15px;
+	width: 12px;
 	background-color: #F5F5F5;
 }
 
