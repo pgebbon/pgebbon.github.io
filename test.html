@@ -3,13 +3,149 @@
         <title>Christian IPTV</title>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://pgebbon.github.io/index.css">
         <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"/>
         <link href="https://cdn.jsdelivr.net/npm/videojs-playlist-ui@3.8.0/dist/videojs-playlist-ui.css" rel="stylesheet">
         <script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/videojs-playlist@4.3.1/dist/videojs-playlist.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/videojs-playlist-ui@3.8.0/dist/videojs-playlist-ui.js"></script>
+<style>
+html,
+body {
+  margin:0;padding:0;width:100%;height:100%;
+}
+
+.video-holder,
+.video-holder * {
+  box-sizing: border-box !important
+}
+
+.video-holder {
+  background: #1b1b1b;
+  padding: 10px
+}
+
+.centered {
+  width: 100%
+}
+
+#video {
+  border-radius: 8px
+}
+
+.video-holder .vjs-big-play-button {
+  left: 10%;
+  width: 50px;
+  margin-left: -25px;
+  height: 40px;
+  top: 10%;
+  margin-top: -20px
+}
+
+
+/* CUSTOM BUTTONS */
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+}
+.icon-angle-left:before {
+    content: "\f104";
+}
+.icon-angle-right:before {
+    content: "\f105";
+}
+
+.video-js .icon-angle-right, .video-js .icon-angle-left {
+    cursor: pointer;
+    -webkit-box-flex: none;
+    -moz-box-flex: none;
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+}
+
+
+Video.js Controls Style Overrides 
+.vjs-default-skin .vjs-progress-control,
+.vjs-default-skin .vjs-fullscreen-control {
+    display: none;  
+}
+
+
+/*.playlist-components {
+    height: 264px;
+    width: 40%;
+    padding: 0 0 0 10px
+}
+.video-js, .playlist-components {
+    display: inline-block;
+    margin-right: -4px;
+    vertical-align: top;
+}
+.button-holder {
+    padding: 10px;
+    height: 36px;
+}
+
+.playlist {
+    height: 264px;
+    width: 100%;
+    overflow-y: auto;
+    color: #c0c0c0;
+    border-radius: 8px;
+    display: block;
+    margin: -2px 0 0 0;
+    padding: 0;
+    position: relative;
+    background: -moz-linear-gradient(top,#000 0,#212121 19%,#212121 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#000),color-stop(19%,#212121),color-stop(100%,#212121));
+    background: -o-linear-gradient(top,#000 0,#212121 19%,#212121 100%);
+    background: -ms-linear-gradient(top,#000 0,#212121 19%,#212121 100%);
+    background: linear-gradient(to bottom,#000 0,#212121 19%,#212121 100%);
+    box-shadow: 0 1px 1px #1a1a1a inset,0px 1px 1px #454545;
+    border: 1px solid #1a1a18;
+}
+#next {float: right}
+#prev {float: left}
+#prev, #next {
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.playlist ul {
+    padding: 0;
+    margin: 0;
+    list-style: none
+}
+.playlist ul li {
+    padding: 10px;
+    border-bottom: 1px solid #191919;
+    cursor: pointer
+}
+.playlist ul li.active {
+    background-color: #4f4f4f;
+    border-color: #4f4f4f;
+    color: white;
+}
+.playlist ul li:hover {
+    border-color: #353535;
+    background: #353535;
+}
+.playlist .poster, .playlist .title  {
+    display: inline-block;
+    vertical-align: top
+}
+.playlist .number {padding-right: 10px; display: none}
+.playlist .poster {display: none}
+.playlist .title {padding-left: 0}*\
+</style>
   </head>
 <body>
     <nav><h3>Christian IPTV</h3></nav>
@@ -363,10 +499,11 @@
         </div>
         <video
 			id="player" data-setup='{}'
-                        width="380"
-			class="video-js"
+                        style="width:100%; height:100%; position:relative; overflow:hidden;"
+						class="video-js"
                         playsinline="playsinline"
                         preload="auto" controls
+						autoplay="false"
 			poster="https://i.imgur.com/kl6RAOh.jpg">
 		<source src="https://biblescreen.faithlifecdn.com/biblescreen/bibleScreen/playlist.m3u8" type="application/x-mpegURL" />
 		</video>
