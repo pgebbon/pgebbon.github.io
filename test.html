@@ -6,6 +6,22 @@
         <link rel="stylesheet" href="https://pgebbon.github.io/index.css">
 	<link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet">
 	<script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
+<style>
+.container {
+width: 100%;
+height: 100%;
+background-color: red;
+overflow: hidden;
+}
+.wrapper {
+width: 100%;
+max-width: calc(100vh / 0.5625);
+padding-bottom: (9 / 16) * 100%;
+top: 50%;
+left: 50%;
+background-color: deepskyblue;
+}
+</style>
     </head>
 <body>
     <nav><h3>Christian IPTV</h3></nav>
@@ -359,8 +375,8 @@
         </div>
         <video
 			id="player" data-setup='{}'
-                        width="380px"
-			class="video-js"
+                        style="width:100%;height:auto; position: relative;"
+						class="video-js"
                         playsinline="playsinline"
                         preload="auto" controls
 						autoplay="false"
