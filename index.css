@@ -61,7 +61,7 @@ main {
 
 ::-webkit-scrollbar
 {
-	width: 12px;
+	width: 15px;
 	background-color: #F5F5F5;
 }
 
@@ -87,7 +87,7 @@ main {
 }
 
 .channel img {
-    width: 144;
+    width: 125;
     /* height: 171; */
 }
 
