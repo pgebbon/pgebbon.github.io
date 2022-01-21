@@ -8,49 +8,29 @@
 	<script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
 <style>
 .container {
-width: 96%;
-height: 96%;
+width: 100%;
+height: 100%;
 background-color: red;
 overflow: hidden;
 }
 .wrapper {
-width: 96%;
-max-width: calc(96vh / 0.5625);
+width: 100%;
+max-width: calc(100vh / 0.5625);
 padding-bottom: (9 / 16) * 100%;
 top: 50%;
 left: 50%;
 background-color: deepskyblue;
 }
 
-.video-js-responsive-container.vjs-hd {
-    padding-top: 35.50%;
-}
-.video-js-responsive-container.vjs-sd {
-    padding-top: 55%;
-}
-.video-js-responsive-container {
-    width: 75%;
-    position: relative;
-}
-.video-js-responsive-container .video-js {
-    height: 100%; 
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.video-holder,
-.video-holder * {
-  box-sizing: border-box !important
+.video-js {
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-.video-holder {
-  background: #1b1b1b;
-  padding: 10px
-}
-
-.centered {
-  width: 100%
+/* This appears to be needed because the control bar (or its contents) will otherwise break out of the player. */
+.video-js .vjs-control-bar {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 </style>
     </head>
