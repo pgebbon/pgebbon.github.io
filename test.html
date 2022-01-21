@@ -8,18 +8,31 @@
 	<script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
 <style>
 .container {
-width: 96%;
+width: 100%;
 height: 100%;
 background-color: red;
 overflow: hidden;
 }
 .wrapper {
-width: 96%;
+width: 100%;
 max-width: calc(100vh / 0.5625);
 padding-bottom: (9 / 16) * 100%;
 top: 50%;
 left: 50%;
 background-color: deepskyblue;
+}
+.video-holder,
+.video-holder * {
+  box-sizing: border-box !important
+}
+
+.video-holder {
+  background: #1b1b1b;
+  padding: 10px
+}
+
+.centered {
+  width: 100%
 }
 </style>
     </head>
