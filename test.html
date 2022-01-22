@@ -9,7 +9,7 @@
 <style>
 html,
 body {
-  margin:0;padding:0;width:98%;height:100%;
+  margin:0;padding:0;width:100%;height:100%;
 }
 .container {
 width: 100%;
@@ -386,6 +386,7 @@ background-color: deepskyblue;
         Note : Dont change the above format. Kindly use the format used here to follow the design pattern. -->
        
         </div>
+	<div id="player">
         <video
 			id="player" data-setup='{}'
                         style="width:100%;height:auto; position: relative;"
@@ -395,7 +396,8 @@ background-color: deepskyblue;
 			autoplay="false"
 			poster="https://i.imgur.com/kl6RAOh.jpg">
 		<source src="https://biblescreen.faithlifecdn.com/biblescreen/bibleScreen/playlist.m3u8" type="application/x-mpegURL" />
-		</video>
+	</video>
+	</div>	
     </main>
 <script>
 	function play(file) {
