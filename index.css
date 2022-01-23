@@ -91,7 +91,7 @@ main {
     /* height: 171; */
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 640px) {
     nav {
         text-align: center;
     }
