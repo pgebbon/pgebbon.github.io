@@ -33,7 +33,7 @@ main {
 }
 
 #channels {
-    flex: 46%;
+    flex: 47%;
     max-height: calc(100vh - 80px) !important;
     overflow-y: scroll;
     display: flex;  
@@ -44,7 +44,7 @@ main {
     padding-bottom: 20px;
 }
 #player {
-    flex: 54%;
+    flex: 53%;
     margin: auto 10px;
 }
 .category {
