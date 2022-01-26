@@ -366,13 +366,23 @@ var player = new Playerjs({id:"player", "file":
 {"title":"<img src='https://i.imgur.com/gPuHs6T.png' width='64px'height='36px'> Beautiful Piano Music","file":"https://www.youtube.com/embed/y7e-GC6oGhg"},
 {"title":"<img src='https://i.imgur.com/HiPwJ45.png' width='64px'height='36px'> Relax Flute Music","file":"https://m.youtube.com/watch?v=e1n2vVG4PaM&list=PLiCkeo30HQ6uuJkcN2boMGDUbSWiPKg-9&t=0s"},
 {"title":"<img src='https://i.imgur.com/0myeSwx.png' width='64px'height='36px'> Powervision TV","file":"https://www.youtube.com/embed/L42NP9a8paw"}
-]}
+]} 
 ]
 , poster:"https://i.imgur.com/kl6RAOh.jpg"});
   
 function PlayerInit(){
       player.api("moveplaylist","channels");
-  	  }
+      if (screen.width < 641) {
+                window.scroll({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+                });
+            }
+        }
+        catch(err) {
+            alert(err);
+        }
 </script>
 </body>
 </html>
