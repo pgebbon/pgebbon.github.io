@@ -371,20 +371,8 @@ var player = new Playerjs({id:"player", "file":
 , poster:"https://i.imgur.com/kl6RAOh.jpg"});
   
 function PlayerInit(){
-      try {
       player.api("moveplaylist","channels");
-  	  if (screen.width < 641) {
-                window.scroll({
-                top: 0,
-                left: 0,
-                behavior: 'smooth'
-                });
-            }
-        }
-        catch(err) {
-            alert(err);
-        }
-   }
+  	  }
 </script>
 </body>
 </html>
