@@ -98,8 +98,8 @@ main {
 }
 
 .channel img {
-    width: 120;
-    height: 67.5;
+    width: 120px;
+    height: 67.5px;
 }
 
 @media only screen and (max-width: 640px) {
