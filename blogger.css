@@ -1,0 +1,136 @@
+<b:skin>
+<style type='text/css'>
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(241, 248, 247);
+    width: 102%;
+    margin-left:  0px;
+    margin-right: 0px;
+    overflow-y: scroll;
+}
+
+main {
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+}
+
+#channels {
+    flex: 48%;
+    max-height: calc(100vh - 80px) !important;
+    overflow-y: scroll;
+    margin-top: 0px;
+    overflow-x: hidden;
+}
+.channel_collapse {
+    margin-top: 0px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#player {
+    flex: 52%;
+    margin: auto 10px;
+}
+.category {
+    width: 96%;
+    padding: 5px;
+    border-bottom: solid 2px rgb(229, 238, 238);
+    cursor: pointer;
+}
+.active, .category:hover {
+    background-color: rgb(29, 29, 29);
+    border-radius: 5px;
+    color: white;
+  }
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.2);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 15px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #363636;
+}
+
+.channel {
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.channel:active {
+    animation: press 0.2s 1 linear;
+}
+
+.channel img {
+    width: 120px;
+    height: 67.5px;
+}
+
+@media only screen and (max-width: 640px) {
+    main {
+        flex-direction: column-reverse;
+    }
+    body {
+        overflow-y: auto;
+    }
+    #channels {
+        height: fit-content;
+        overflow-y: unset;
+    }
+    .channel {
+        margin-right: 10px;
+    }
+    .category {
+        text-align: center;
+    }
+    #player {
+        flex: auto;
+        min-width: 192px;
+        min-height: 108px;
+        margin: 0px;
+    }
+}
+
+@keyframes press {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.92);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+</style>
+</b:skin>
