@@ -36,7 +36,7 @@ main {
     flex: 47%;
     max-height: calc(100vh - 80px) !important;
     overflow-y: scroll;
-    margin-top: 20px;
+    margin-top: 10px;
     overflow-x: hidden;
 }
 .channel_collapse {
@@ -134,7 +134,10 @@ main {
         flex: auto;
         min-width: 192px;
         min-height: 108px;
-        margin: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+        margin-top: 0px;
     }
 }
 
