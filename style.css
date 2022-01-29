@@ -11,16 +11,17 @@ main {
   display: flex;
 }
 #player {
-    flex: 52%;
+    flex: 53%;
     margin: auto 10px;
     margin-left: 10px;
     vertical-align: text-top;
 }
 #channels {
-    flex: 48%;
+    flex: 47%;
     max-height: calc(100vh - 0px) !important;
     overflow-y: scroll;
-    margin-top: 0px;
+    margin-top: 10px;
+    margin-left: 0px;
     overflow-x: hidden;
 }
 ::-webkit-scrollbar-track
@@ -44,7 +45,10 @@ main {
         flex: auto;
         min-width: 192px;
         min-height: 108px;
-        margin: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+        margin-top: 0px;
     }
    #channels {
         height: fit-content;
