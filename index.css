@@ -132,6 +132,7 @@ main {
     }
     #player {
         flex: auto;
+	width: 100%;
         min-width: 192px;
         min-height: 108px;
         margin-left: 0px;
