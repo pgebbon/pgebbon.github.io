@@ -50,10 +50,7 @@ main {
 }
 #player {
     flex: 53%;
-    margin-left: 10px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    margin: auto 10px;
 }
 .category {
     width: 94%;
