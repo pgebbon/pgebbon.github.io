@@ -23,7 +23,7 @@ nav {
 
 body {
     background-color: rgb(241, 248, 247);
-    overflow-y: hidden;
+    overflow-y: scroll;
 }
 
 main {
@@ -51,6 +51,7 @@ main {
 #player {
     flex: 53%;
     margin: auto 10px;
+    margin-top: 0px;
 }
 .category {
     width: 94%;
