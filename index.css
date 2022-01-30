@@ -23,7 +23,7 @@ nav {
 
 body {
     background-color: rgb(241, 248, 247);
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 main {
@@ -50,8 +50,8 @@ main {
 }
 #player {
     flex: 53%;
-    margin-left: auto 10px;
-    margin-right: auto 0px;
+    margin-left: 10px;
+    margin-right: 0px;
     margin-bottom: 0px;
     margin-top: 0px;
 }
