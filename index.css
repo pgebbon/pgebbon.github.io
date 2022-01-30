@@ -23,7 +23,7 @@ nav {
 
 body {
     background-color: rgb(241, 248, 247);
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 main {
