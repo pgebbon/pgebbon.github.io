@@ -52,8 +52,8 @@ main {
     flex: 53%;
     margin-left: auto 10px;
     margin-right: auto 0px;
-    margin-bottom: auto 0px;
-    margin-top: auto 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 .category {
     width: 94%;
