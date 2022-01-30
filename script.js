@@ -350,7 +350,7 @@ var player = new Playerjs({id:"player", "file":
 [
 {"title":"<img src='https://i.imgur.com/HdIDbk7.png' width='64px'height='36px'> Salvation TV","file":"https://d39bpvuye592vg.cloudfront.net/live.m3u8"},
 {"title":"<img src='https://i.imgur.com/XQY3ysh.png' width='64px'height='36px'> TBN","file":"https://api.new.livestream.com/accounts/27460990/events/8266920/live.m3u8?Faith"},
-{"title":"<img src='https://i.imgur.com/UGyo26g.jpg' width='64px'height='36px'> Hillsong Channel","file":"https://api.new.livestream.com/accounts/27460990/events/8266909/live.m3u8?Faith"},
+{"title":"<img src='https://i.imgur.com/UPVYGWz.jpg' width='64px'height='36px'> TBN Inspire","file":"https://api.new.livestream.com/accounts/27460990/events/8266909/live.m3u8?Faith"},
 {"title":"<img src='https://i.imgur.com/mnkq9jj.jpg' width='64px'height='36px'> Smile TV","file":"https://api.new.livestream.com/accounts/27460990/events/8266916/live.m3u8?Faith"},
 {"title":"<img src='https://i.imgur.com/tj5kcst.jpg' width='64px'height='36px'> Biznet Kids","file":"http://livestream.biznetvideo.net/biznet_kids/smil:kids.smil/chunklist_w417362857_b2256000_slen_tkYml6a2V5bGl2ZXN0YXJ0dGltZT0wJmJpemtleWxpdmVlbmR0aW1lPTAmYml6a2V5bGl2ZUN1c3RvbVBhcmFtZXRlcj1teVBhcmFtZXRlciZiaXprZXlsaXZlaGFzaD1xQXJpMU0yeHVfTUFsbkh3VlJ0T3MyNGxSOFlfSFNEaWpOMkNSTmdoaWZVbGxoWXFRU0Rsa2QwcUU4Q2tad3hD.m3u8"},
 {"title":"<img src='https://i.imgur.com/3IYvqq0.jpg' width='64px'height='36px'> Nick Jr","file":"https://cdn1.mobiletv.bg/T5/bit/bit_794613_850k.m3u8"},
