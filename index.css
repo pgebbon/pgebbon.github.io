@@ -63,7 +63,7 @@ main {
     cursor: pointer;
 }
 .active, .category:hover {
-    background-color: rgb(29, 29, 29);
+    background-color: rgb(128, 0, 32);
     border-radius: 10px;
     color: white;
   }
