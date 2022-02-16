@@ -34,7 +34,7 @@ main {
 
 #channels {
     flex: 40%;
-    background-color: #eee;
+    background-color: #cdc4e3;
     max-height: calc(100vh - 80px) !important;
     overflow-y: scroll;
     margin-top: 10px;
@@ -57,7 +57,7 @@ main {
 }
 .category {
     width: 94%;
-    background-color: #999;
+    background-color: #9e8dc9;
     padding: 10px;
     border-bottom: solid 2px rgb(229, 238, 238);
     cursor: pointer;
@@ -97,7 +97,7 @@ main {
 }
 
 .channel {
-    background-color: #fff;
+    background-color: #E6E6FA;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     margin-bottom: 5px;
     margin-right: 5px;
