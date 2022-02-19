@@ -24,9 +24,3 @@ my site from blogger and was hosting the java script file here at GitHub
 https://christianiptvchannels.blogspot.com/
 
 Recently @allwin helped me host the content as well in a good looking manner at GitHub itself.
-
-For some of the streams that are still not compatible on PlayerJS I see VideoJS as an excellent alternative
-
-Here I'm testing VideoJS as well that's a good fit for Android TV and mobile platform 
-
-PlayerJS works well with iOS and PC
