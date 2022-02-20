@@ -19,7 +19,7 @@ nav {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border: 2px solid #ffffff;
+    border: 2px solid rgb(48, 25, 52);
 }
 
 body {
