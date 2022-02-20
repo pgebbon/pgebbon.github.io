@@ -15,7 +15,7 @@ nav {
     height: 56px;
     padding: 0 10px;
     font-size: clamp(1.5rem, 2.0vw, 4rem); 
-    background-color: white;
+    background-color: rgb(48, 25, 52);
     display: flex;
     justify-content: center;
     flex-direction: column;
