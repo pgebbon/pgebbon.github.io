@@ -12,7 +12,7 @@ html {
 
 nav {
     color: rgb(159, 43, 104);
-    height: 40px;
+    height: 60px;
     padding: 0 10px;
     font-size: clamp(1.5rem, 2.0vw, 4rem); 
     background-color: white;
