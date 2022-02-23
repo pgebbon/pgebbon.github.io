@@ -34,9 +34,9 @@ main {
 }
 
 #channels {
-    flex: 35%;
+    flex: 38%;
     background-color: #cdc4e3;
-    max-height: calc(100vh - 80px) !important;
+    max-height: calc(100vh - 120px) !important;
     overflow-y: scroll;
     margin-top: 5px;
     overflow-x: hidden;
@@ -51,7 +51,7 @@ main {
     justify-content: space-evenly;
 }
 #player {
-    flex: 60%;
+    flex: 62%;
     margin: auto 1px;
     margin-top: 5px;
     margin-right: 0px;
@@ -114,7 +114,7 @@ main {
 }
 
 .channel img {
-    width: 110px;
+    width: 106px;
     height: 63px;
     border: 1px solid #555;
     border-radius: 10px;
