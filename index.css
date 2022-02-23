@@ -24,12 +24,12 @@ nav {
 
 body {
     background-color: rgb(241, 248, 247);
-    overflow-y: scroll;
+    overflow-y: hidden;
 }
 
 main {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
     display: flex;
 }
 
@@ -39,6 +39,7 @@ main {
     max-height: calc(100vh - 120px) !important;
     overflow-y: scroll;
     margin-top: 5px;
+    margin-left: 0px;
     overflow-x: hidden;
 }
 .channel_collapse {
@@ -135,6 +136,8 @@ main {
     #channels {
         height: fit-content;
         overflow-y: unset;
+        margin-left: 5px;
+        margin-right: 5px;
     }
     .channel {
         margin-right: 0;
@@ -143,8 +146,8 @@ main {
         flex: auto;
         min-width: 192px;
         min-height: 108px;
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: 5px;
+        margin-right: 5px;
         margin-bottom: 5px;
         margin-top: 5px;
     }
