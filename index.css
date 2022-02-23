@@ -63,7 +63,7 @@ main {
     padding: 10px;
     border-bottom: solid 2px rgb(229, 238, 238);
     cursor: pointer;
-    font-size: large;
+    font-size: 14px;
 }
 .active, .category:hover {
     background-color: rgb(128, 0, 32);
